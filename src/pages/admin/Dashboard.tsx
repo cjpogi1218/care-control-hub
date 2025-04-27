@@ -5,14 +5,14 @@ import { Users, FileText, Calendar, Clock, Pill, FileChartLine } from "lucide-re
 
 const Dashboard = () => {
   const stats = [
-    { title: "Total Users", value: "24", icon: Users },
+    { title: "Total Users", value: "12", icon: Users },
     { title: "Total Patients", value: "156", icon: FileText },
     { title: "Today's Appointments", value: "8", icon: Calendar },
-    { title: "Pending Reports", value: "3", icon: FileChartLine },
+    { title: "Medicine Items", value: "35", icon: Pill },
   ];
 
   return (
-    <div>
+    <div className="p-6">
       <h1 className="text-2xl font-bold mb-6">Admin Dashboard</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat) => (
